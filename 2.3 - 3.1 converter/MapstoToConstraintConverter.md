@@ -26,8 +26,7 @@ It returns → a Constraint in SBOL 3.
 2️⃣ Get the Local SubComponent
 ```java
 SubComponent sbol3LocalSubComponent =
-    Util.getSBOL3Entity(sbol3ParentComponent.getSubComponents(),
-                        mapsTo.getLocal(), parameters);
+    Util.getSBOL3Entity(sbol3ParentComponent.getSubComponents(), mapsTo.getLocal(), parameters);
 ```
 
 This line finds the SBOL 3 equivalent of the local component (the thing being mapped in SBOL 2).
@@ -80,4 +79,5 @@ sbol3Constraint = sbol3ParentComponent.createConstraint(
 🔹 Case 4: MERGE
 
 // REMOVED IN SBOL3. HANDLED AS USEREMOTE
+
 → SBOL 3 doesn’t have “merge” anymore, so it treats it like “remote replaces local.”
