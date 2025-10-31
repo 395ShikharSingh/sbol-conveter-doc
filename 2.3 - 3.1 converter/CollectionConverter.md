@@ -1,4 +1,5 @@
 CollectionConverter
+
 🧠 High-level idea
 The goal of this class is to take an SBOL2 Collection (a group of biological elements)
 and convert it into an SBOL3 Collection object.
@@ -19,7 +20,7 @@ and convert it into an SBOL3 Collection object.
 ```java
 @Override
 public Collection convert(SBOLDocument doc, org.sbolstandard.core2.Collection input, Parameters parameters)
-        throws SBOLGraphException {
+        throws SBOLGraphException 
 ```
 This is the main function that performs the conversion.
 It takes:
